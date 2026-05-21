@@ -1,6 +1,6 @@
 Identifier: eos5qya
 Slug: antimicrobial-activity-ngonorrhoeae
-Status: In progress
+Status: Ready
 Title: Antimicrobial activity prediction against Neisseria gonorrhoeae from 
   public ChEMBL data
 Description: Bioactivity prediction of growth inhibition in Neisseria 
@@ -40,6 +40,18 @@ Source Code: https://github.com/ersilia-os/chembl-antimicrobial-models
 License: GPL-3.0-or-later
 Contributor: arnaucoma24
 Incorporation Date: '2026-05-19'
+Last Packaging Date: '2026-05-21'
+Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5qya.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos5qya
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 30.0
 Environment Size: 1888.0
+Image Size: 2068.95
+Computational Performance 1: 35.95
+Computational Performance 2: 28.83
+Computational Performance 3: 31.53
+Computational Performance 4: 128.84
+Computational Performance 5: 564.31
