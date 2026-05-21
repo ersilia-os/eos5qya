@@ -2,8 +2,7 @@
 
 Bioactivity prediction of growth inhibition in Neisseria gonorrhoeae, trained as binary (active/inactive) classifiers from publicly available data in ChEMBL. Independent models are trained on multiple bioactivity datasets, corresponding to dose-response (MIC) assays. A ranking score is provided for each model alongside a combined consensus score.
 
-This model was incorporated on 2026-05-19.
-
+This model was incorporated on 2026-05-19.Last packaged on 2026-05-21.
 
 ## Information
 ### Identifiers
@@ -39,12 +38,19 @@ Below are the **Output Columns** of the model:
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `Internal`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos5qya](https://hub.docker.com/r/ersiliaos/eos5qya)
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5qya.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5qya.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `30`
 - **Environment Size (Mb):** `1888`
+- **Image Size (Mb):** `2068.95`
 
+**Computational Performance (seconds):**
+- 10 inputs: `35.95`
+- 100 inputs: `31.53`
+- 10000 inputs: `564.31`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/chembl-antimicrobial-models](https://github.com/ersilia-os/chembl-antimicrobial-models)
