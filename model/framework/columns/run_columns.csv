@@ -1,1 +1,6 @@
 name,type,direction,description
+consensus_score,float,high,Tanh-transformed quality-weighted consensus probability across the 4 sub-models. Recommended threshold: 0.871.
+merged_mic_decoys,float,high,Probability from sub-model trained on MIC measurements merged across 7 ChEMBL assays (cutoff 10 uM; n=570 incl. decoys). Recommended threshold: 0.853.
+general_mic90_decoys,float,high,Probability from sub-model trained on MIC90 measurements aggregated across 12 ChEMBL assays (cutoff 10 uM; n=560 incl. decoys). Recommended threshold: 0.850.
+general_mic50_decoys,float,high,Probability from sub-model trained on MIC50 measurements aggregated across 8 ChEMBL assays (cutoff 10 uM; n=530 incl. decoys). Recommended threshold: 0.870.
+general_mic,float,high,Probability from sub-model trained on MIC measurements aggregated across 338 ChEMBL assays (cutoff 10 uM; n=446). Recommended threshold: 0.490.
