@@ -2,7 +2,7 @@
 
 Bioactivity prediction of growth inhibition in Neisseria gonorrhoeae, trained as binary (active/inactive) classifiers from publicly available data in ChEMBL. Independent models are trained on multiple bioactivity datasets, corresponding to dose-response (MIC) assays. A ranking score is provided for each model alongside a combined consensus score.
 
-This model was incorporated on 2026-05-19.Last packaged on 2026-05-21.
+This model was incorporated on 2026-05-19.Last packaged on 2026-06-01.
 
 ## Information
 ### Identifiers
@@ -46,12 +46,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `47`
 - **Environment Size (Mb):** `1889`
-- **Image Size (Mb):** `2068.95`
+- **Image Size (Mb):** `2083.84`
 
 **Computational Performance (seconds):**
-- 10 inputs: `35.95`
-- 100 inputs: `31.53`
-- 10000 inputs: `564.31`
+- 10 inputs: `43.62`
+- 100 inputs: `38.92`
+- 10000 inputs: `688.11`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/chembl-antimicrobial-models](https://github.com/ersilia-os/chembl-antimicrobial-models)
