@@ -10,7 +10,6 @@ Description: Bioactivity prediction of growth inhibition in Neisseria
   score is provided for each model alongside a combined consensus score.
 Deployment:
   - Local
-  - Online
 Source: Local
 Source Type: Internal
 Task: Annotation
@@ -20,11 +19,9 @@ Input:
 Input Dimension: 1
 Output:
   - Score
-Output Dimension: 5
+Output Dimension: 6
 Output Consistency: Fixed
-Interpretation: Probability of antimicrobial activity against Neisseria 
-  gonorrhoeae from 4 ChEMBL-trained sub-models, plus a quality-weighted 
-  consensus score.
+Interpretation: Probability of antimicrobial activity against Neisseria gonorrhoeae from 5 ChEMBL-trained sub-models, plus a quality-weighted consensus score.
 Tag:
   - Gram-negative bacteria
   - Antimicrobial activity
