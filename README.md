@@ -1,6 +1,6 @@
 # Antimicrobial activity prediction against Neisseria gonorrhoeae from public ChEMBL data
 
-Bioactivity prediction of growth inhibition in Neisseria gonorrhoeae, trained as binary (active/inactive) classifiers from publicly available data in ChEMBL. Independent models are trained on multiple bioactivity datasets, corresponding to dose-response (MIC) assays. A ranking score is provided for each model alongside a combined consensus score.
+Bioactivity prediction of growth inhibition in Neisseria gonorrhoeae, trained as binary (active/inactive) classifiers from publicly available data in ChEMBL. Independent models are trained on multiple bioactivity datasets, corresponding to dose-response (MIC) assays, among others. A ranking score is provided for each model alongside a combined consensus score.
 
 This model was incorporated on 2026-05-19.Last packaged on 2026-06-02.
 
@@ -21,19 +21,14 @@ This model was incorporated on 2026-05-19.Last packaged on 2026-06-02.
 - **Input Dimension:** `1`
 
 ### Output
-- **Output Dimension:** `6`
+- **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of antimicrobial activity against Neisseria gonorrhoeae from 5 ChEMBL-trained sub-models, plus a quality-weighted consensus score.
+- **Interpretation:** Probability of antimicrobial activity against Neisseria gonorrhoeae from 1 ChEMBL-trained sub-model.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| consensus_score | float | high | Tanh-transformed quality-weighted consensus probability across the 5 sub-models. Recommended threshold: 0.887. |
-| merged_mic_decoys | float | high | Probability from sub-model trained on MIC measurements merged across 7 ChEMBL assays (cutoff 10 uM; n=570 incl. decoys). Recommended threshold: 0.861. |
-| general_dose_response_decoys | float | high | Probability from sub-model trained on dose-response measurements aggregated across 3 ChEMBL assays (n=2620). Recommended threshold: 0.841. |
-| general_mic90_decoys | float | high | Probability from sub-model trained on MIC90 measurements aggregated across 12 ChEMBL assays (cutoff 10 uM; n=560 incl. decoys). Recommended threshold: 0.87. |
-| general_mic50_decoys | float | high | Probability from sub-model trained on MIC50 measurements aggregated across 8 ChEMBL assays (cutoff 10 uM; n=530 incl. decoys). Recommended threshold: 0.873. |
-| general_mic | float | high | Probability from sub-model trained on MIC measurements aggregated across 338 ChEMBL assays (cutoff 10 uM; n=446). Recommended threshold: 0.493. |
+| chembl_dose_response_0 | float | high | Probability from sub-model trained on ChEMBL dose-response low-data catch-all pool of 47 assays (438 compounds). Recommended threshold: 0.554. |
 
 
 ### Source and Deployment
