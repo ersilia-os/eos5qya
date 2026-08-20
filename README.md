@@ -1,6 +1,6 @@
 # Antimicrobial activity prediction against Neisseria gonorrhoeae from public ChEMBL data
 
-Bioactivity prediction of growth inhibition in Neisseria gonorrhoeae, trained as binary (active/inactive) classifiers from publicly available data in ChEMBL. Independent models are trained on multiple bioactivity datasets, corresponding to dose-response (MIC) assays, among others. A ranking score is provided for each model alongside a combined consensus score.
+Estimates activity against Neisseria gonorrhoeae, an organism that has developed resistance to every antibiotic class used against it and now threatens to become untreatable. Only one usable dose-response assay pool could be assembled from ChEMBL, so unlike the multi-model panels for better-studied pathogens this prediction rests on a single classifier with no consensus to fall back on. Confidence should be read accordingly, and the scarcity itself reflects how little public screening this pathogen has received.
 
 This model was incorporated on 2026-05-19.Last packaged on 2026-07-22.
 
@@ -12,7 +12,7 @@ This model was incorporated on 2026-05-19.Last packaged on 2026-07-22.
 ### Domain
 - **Task:** `Annotation`
 - **Subtask:** `Activity prediction`
-- **Biomedical Area:** `Gonorrhea`
+- **Biomedical Area:** `Gonorrhea`, `Antimicrobial resistance`
 - **Target Organism:** `Neisseria gonorrhoeae`
 - **Tags:** `Gram-negative bacteria`, `Antimicrobial activity`, `ChEMBL`
 
@@ -23,7 +23,7 @@ This model was incorporated on 2026-05-19.Last packaged on 2026-07-22.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of antimicrobial activity against Neisseria gonorrhoeae from 1 ChEMBL-trained sub-model.
+- **Interpretation:** Probability of Neisseria gonorrhoeae growth inhibition from a single ChEMBL-trained model.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
