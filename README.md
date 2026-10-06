@@ -39,8 +39,8 @@ Below are the **Output Columns** of the model:
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5qya.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5qya.zip)
 
 ### Resource Consumption
-- **Model Size (Mb):** `23`
-- **Environment Size (Mb):** `7208`
+- **Model Size (Mb):** `24`
+- **Environment Size (Mb):** `7982`
 - **Image Size (Mb):** `7048.47`
 
 **Computational Performance (seconds):**
