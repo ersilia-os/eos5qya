@@ -1,2 +1,2 @@
 name,type,direction,description
-chembl_dose_response_0,float,high,Probability from sub-model trained on ChEMBL dose-response low-data catch-all pool of 47 assays (438 compounds). Recommended threshold: 0.554.
+chembl_dose_response_0,float,high,Probability from sub-model trained on ChEMBL dose-response low-data catch-all pool of 47 assays (438 compounds). Recommended threshold: 0.65.
