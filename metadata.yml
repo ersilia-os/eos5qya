@@ -3,12 +3,7 @@ Slug: antimicrobial-activity-ngonorrhoeae
 Status: Ready
 Title: Antimicrobial activity prediction against Neisseria gonorrhoeae from 
   public ChEMBL data
-Description: Bioactivity prediction of growth inhibition in Neisseria 
-  gonorrhoeae, trained as binary (active/inactive) classifiers from publicly 
-  available data in ChEMBL. Independent models are trained on multiple 
-  bioactivity datasets, corresponding to dose-response (MIC) assays, among 
-  others. A ranking score is provided for each model alongside a combined 
-  consensus score.
+Description: Bioactivity prediction of growth inhibition in Neisseria gonorrhoeae, trained as binary (active/inactive) classifiers from publicly available data in ChEMBL. Independent models are trained on multiple bioactivity datasets, corresponding to dose-response (MIC) assays, among others. A ranking score is provided for each model alongside a combined consensus score.
 Deployment:
   - Local
 Source: Local
@@ -22,8 +17,7 @@ Output:
   - Score
 Output Dimension: 1
 Output Consistency: Fixed
-Interpretation: Probability of antimicrobial activity against Neisseria 
-  gonorrhoeae from 1 ChEMBL-trained sub-model.
+Interpretation: Probability of antimicrobial activity against Neisseria gonorrhoeae from 1 ChEMBL-trained sub-model.
 Tag:
   - Gram-negative bacteria
   - Antimicrobial activity
@@ -41,13 +35,12 @@ License: GPL-3.0-or-later
 Contributor: arnaucoma24
 Incorporation Date: '2026-05-19'
 Last Packaging Date: '2026-10-06'
-Release: v4.0.2
+Release: v4.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos5qya.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos5qya
 Docker Architecture:
   - AMD64
   - ARM64
-Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos5qya_v4.sif
 Model Size: 24.0
 Environment Size: 7982.0
 Image Size: 7829.27
